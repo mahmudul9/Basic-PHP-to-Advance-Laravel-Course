@@ -6,7 +6,6 @@ $SubjectB = 80;
 $SubjectC = 80;
 $SubjectD = 90;
 
-
 // Result Calculation
 $totalMark = $SubjectA + $SubjectB + $SubjectC + $SubjectD;
 $averageMark = $totalMark / 4 ;
