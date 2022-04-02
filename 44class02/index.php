@@ -5,7 +5,7 @@ For creating a product upload form what specifications will be uploaded and what
 <?php
 $monitorQuantity             = "three"; //Datatype is string
 
-$moniter_name                = "hp monitor" ;       //Datatype is string
+$moniter_name                = "hp monitor" ;     //Datatype is string
 
 $Is_moniter_condition_old    = true;   //Datatype is Boolean
 
