@@ -3,7 +3,7 @@
 For creating a product upload form what specifications will be uploaded and what will be their data types?  -->
 
 <?php
-$monitorQuantity = "three";  //Datatype is string
+$monitorQuantity = "three"; //Datatype is string
 
 $moniter_name = "hp monitor" ;       //Datatype is string
 
