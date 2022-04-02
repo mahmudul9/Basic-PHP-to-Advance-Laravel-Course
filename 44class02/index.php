@@ -3,15 +3,15 @@
 For creating a product upload form what specifications will be uploaded and what will be their data types?  -->
 
 <?php
-$monitorQuantity = "three"; //Datatype is string
+$monitorQuantity             = "three"; //Datatype is string
 
-$moniter_name = "hp monitor" ;       //Datatype is string
+$moniter_name                = "hp monitor" ;       //Datatype is string
 
-$Is_moniter_condition_old = true;   //Datatype is Boolean
+$Is_moniter_condition_old    = true;   //Datatype is Boolean
 
-$Moniter_size =   15.6;      //Datatype is double/float
+$Moniter_size                = 15.6;      //Datatype is double/float
 
-$moniter_cable_status= "VGA";//Datatype is string or
+$moniter_cable_status        = "VGA";    //Datatype is string or
 $is_moniter_cable_status_VGA = true; //Datatype is Boolean
 
-$sellPrice = 8000 ;         //Datatype is integer
+$sellPrice                   = 8000 ;         //Datatype is integer
