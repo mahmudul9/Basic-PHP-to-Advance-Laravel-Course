@@ -15,7 +15,7 @@ $endDay = date("t");
 $monthName = date("M");
 
 
-for($i=$start_date; $i<=$endDay; $i++){
+for($i=$startDate; $i<=$endDay; $i++){
     echo $monthName . $i ;
     echo "<br>";
 }
