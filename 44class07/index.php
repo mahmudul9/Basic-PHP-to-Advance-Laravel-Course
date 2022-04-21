@@ -18,27 +18,69 @@
     <?php
 $questionSet = [
     [
-        'question' => 'Which river flows across the India-Bangladesh border?',
+        'question' => 'Which command should you use to initialize a new git repository?',
         'options' => [
-            'Hooghly River','Ichamati River','Brahmaputra River','Suma River'
+            'git init','git bash','git install','git start'
         ]
     ],
     [
-        'question' => ' Capital of Bangladesh is',
+        'question' => 'Command to check the created, modified, deleted files in git bash before Commit?',
         'options' => [
-            'Hooghly River','Ichamati River','Brahmaputra River','Suma River'
+            'git show','git log','git status ','all of the above'
         ]
     ],
     [
-        'question' => 'Which river flows across the India-Bangladesh border?',
+        'question' => 'Which the git command for commit with this "Initial commit" message?',
         'options' => [
-            'Hooghly River','Ichamati River','Brahmaputra River','Suma River'
+            'git commit -m "Initial commit" |','git commit -msg "Initial commit"','git commit -M "Initial commit"','git commit "comment"'
         ]
     ],
     [
-        'question' => 'Which river flows across the India-Bangladesh border?',
+        'question' => 'Git commit -m < ? >, ? is for...',
         'options' => [
-            'Hooghly River','Ichamati River','Brahmaputra River','Suma River'
+            'comment','repo url
+            ','file name to be committed','None'
+        ]
+    ],
+    [
+        'question' => 'You can type “git status” at any time in a directory controlled by git to check the status of your files.',
+        'options' => [
+            'True','False',
+        ]
+    ],
+    [
+        'question' => 'You are in desktop directory, You have a directory name MyGitProject on Desktop desktop directory. How can you enter into this directory?',
+        'options' => [
+            'git cd MyGitProject','cd MyGitProjec
+            ','file name to be committed','cd ..'
+        ]
+    ],
+    [
+        'question' => 'What is the meaning of this command git add . '  ,
+        'options' => [
+            'stage individual file of your git project','stage All files of your current directory
+            ','stage all files of your whole project','None'
+        ]
+    ],
+    [
+        'question' => 'Git is a Version Control System... '  ,
+        'options' => [
+            'True ','False
+            ',
+        ]
+    ],
+    [
+        'question' => 'Github is not a Software Development Hosting Platform for Collaboration.'  ,
+        'options' => [
+            'True ','False
+            ',
+        ]
+    ],
+    [
+        'question' => ' Whats a shortcut to staging all the changes you have? '  ,
+        'options' => [
+            'git commit add .','git commit .
+            ','git add ','git stage -a'
         ]
     ],
 ];
@@ -50,6 +92,7 @@ $questionSet = [
 <div class="container">
 
 <?php
+ shuffle($questionSet);
 foreach ($questionSet as $key1 => $total_question) {
     echo   ++$key1 . " . " . $total_question['question'] ."<br>";
     
@@ -66,7 +109,7 @@ foreach ($questionSet as $key1 => $total_question) {
 </form>
 
 <?php } ?>
-<?php } ?>
+<?php echo "<br>"; } ?>
 
 
 
