@@ -47,53 +47,32 @@ $questionSet = [
 
 ?>
 
-    <div class="container">
-        <div class="row">
+<div class="container">
 
-            <div class="col-lg-12">
-                <?php
-           foreach($questionSet as $key => $question){
-          ?>
+<?php
+foreach ($questionSet as $key1 => $total_question) {
+    echo   ++$key1 . " . " . $total_question['question'] ."<br>";
+    
+    foreach ($total_question['options'] as $key2 => $option) {
 
-
-                <label><b style="font-size: 18px"></b>
-                </label>
-
-
-                <?php } ?>
-
-
-
-                <!-- Answer -->
-
-                <?php
-
-foreach ($questionSet as $key => $question){
-    echo $question ['question'];
-
-    foreach ($question ['options']as $key1 => $option_set){
-             ?>
-                <!-- option 1 -->
-
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
-                        value="option1">
-                    <label class="form-check-label" for="exampleRadios1"><?php echo $option_set; ?>
-
-                    </label>
-                </div>
-
-                <?php 
-   }
-}
+  
 ?>
+<form action="/action_page.php">
+  <p></p>
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html"><?php echo $option; ?></label><br>
 
 
-            </div>
+</form>
+
+<?php } ?>
+<?php } ?>
 
 
-        </div>
-    </div>
+
+</div>
+             
+
 
 
     <!-- Question 02 -->
