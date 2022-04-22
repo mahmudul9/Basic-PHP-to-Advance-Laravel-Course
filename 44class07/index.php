@@ -100,15 +100,17 @@ foreach ($questionSet as $key1 => $total_question) {
 
   
 ?>
-<form action="/action_page.php">
-  <p></p>
-  <input type="radio" id="html" name="fav_language" value="HTML">
-  <label for="html"><?php echo $option; ?></label><br>
 
 
-</form>
+<div class="custom-control custom-radio">
+  <input type="radio" id="customRadio1" name="customRadio" class="form-check-input" checked>
+  <label class="form-check-label" for="customRadio1"><?php echo $option; ?></label>
+</div>
 
-<?php } ?>
+
+<?php
+    } 
+ ?>
 <?php echo "<br>"; } ?>
 
 
