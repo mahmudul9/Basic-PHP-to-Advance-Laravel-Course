@@ -103,7 +103,7 @@ foreach ($questionSet as $key1 => $total_question) {
 
 
 <div class="custom-control custom-radio">
-  <input type="radio" id="customRadio1" name="customRadio" class="form-check-input" checked>
+  <input type="radio" id="customRadio1" name="customRadio" class="form-check-input">
   <label class="form-check-label" for="customRadio1"><?php echo $option; ?></label>
 </div>
 
