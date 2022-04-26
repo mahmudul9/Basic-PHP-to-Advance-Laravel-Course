@@ -1,6 +1,7 @@
 <!-- Create a function that will return children, teenagers, young people, old people from the age -->
 
 <!-- Question 01 -->
+<h3>Question 01</h3>
 <?php
 function age($yourage){
     if($yourage<=12){
@@ -26,9 +27,13 @@ echo age($yourage=51);
 
 
 echo "<br>";echo "<br>";
-// Question 02
-// Create a function that will return the area of a rectangle, square, triangle
 
+?>
+
+<h3>Question 02</h3>
+ <!-- Question 02
+ Create a function that will return the area of a rectangle, square, triangle -->
+<?php
 function area($a,$b=0,$c=0){
 if ($a>0 && $b>0 && $c>0) {
     return"Area of rectangle". $a+$b+$c;
@@ -49,10 +54,13 @@ echo area(5);echo "<br>";
 echo "<br>";echo "<br>";echo "<br>";
 
 
+?>
 
-// Question 03
-// GPA function for result publishing
+<h3>Question 03</h3>
+<!-- Question 03
+ GPA function for result publishing -->
 
+<?php
 function result_publish($SubjectA,$SubjectB,$SubjectC,$SubjectD){
     // Result Calculation
 $totalMark = $SubjectA + $SubjectB + $SubjectC + $SubjectD;
@@ -96,8 +104,15 @@ echo result_publish(45,60,70,99);echo "<br>";
 echo result_publish(70,60,90,95);
 
 echo "<br>";echo "<br>";
-// Question 04
-// Create an age calculator function
+
+?>
+
+
+<h3>Question 04</h3>
+ <!-- Question 04
+ Create an age calculator function -->
+
+<?php
 function get_age( $date ) { 
     $age = date('Y') - $date; 
    if (date('md') < date('md', strtotime($date))) { 
@@ -109,9 +124,13 @@ echo"Your age is"." ". get_age(1999 );
 
 
 echo "<br>";echo "<br>";
-// Question 05
-// Create a BMI function for health
+?>
 
+
+
+<h3>Question 05</h3>
+<!-- Create a BMI function for health -->
+<?php
 function BMI_Index($weight,$height){
 
     $height=$height/100;
@@ -141,15 +160,20 @@ echo BMI_Index(54,0.889);echo "<br>";
 echo BMI_Index(64,155);echo "<br>";
 
 
+echo "<br>";echo "<br>";
+?>
 
-// Question 06
-// Create a currency converter function from taka to USD, CAD, POUND, EURO etc
 
+<h3>Question 06</h3>
+<!-- // Question 06
+// Create a currency converter function from taka to USD, CAD, POUND, EURO etc -->
+
+
+<?php
 function CurrencyConverter($Money,$Convert){
 
     $convert= strtoupper($Convert);
     // Capital small case
-
 
     if ($Convert=="USD") {
         $convert_money="$Money"." TK=" . $Money/86.56 ." USD";
@@ -184,3 +208,4 @@ echo CurrencyConverter(100,"RUPI");echo "<br>";
 echo CurrencyConverter(100,"POUND");echo "<br>";
 echo CurrencyConverter(100,"RIYAL");echo "<br>";
 echo CurrencyConverter(100,"EURO");echo "<br>";
+?>
