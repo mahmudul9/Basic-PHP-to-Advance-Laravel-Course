@@ -112,18 +112,75 @@ echo "<br>";echo "<br>";
 // Question 05
 // Create a BMI function for health
 
-function BMI_Index($BMI){
+function BMI_Index($weight,$height){
+
+    $height=$height/100;
+    $BMI=($weight/($height*$height));
+    $BMI=number_format($BMI,2);
+
+
+
     if ($BMI<=18.5) {
-       $output=	"Underweight";
+       return"Underweight";
     }
     else if ($BMI>=18.5 && $BMI<=24.9){
-        $output=	"Healthy Weight";
+        return"Healthy Weight";
     }
     else if ($BMI>=25.0 && $BMI<=29.9){
-        $output=	"Overweight";
+        return"Overweight";
     }
     else if ($BMI>=30.0){
-        $output=	"Obesity";
+        return"Obesity";
+    }
+    else{
+        "Error Input";
     }
 }
-echo 
+echo BMI_Index(44,0.445);echo "<br>";
+echo BMI_Index(54,0.889);echo "<br>";
+echo BMI_Index(64,155);echo "<br>";
+
+
+
+// Question 06
+// Create a currency converter function from taka to USD, CAD, POUND, EURO etc
+
+function CurrencyConverter($Money,$Convert){
+
+    $convert= strtoupper($Convert);
+    // Capital small case
+
+
+    if ($Convert=="USD") {
+        $convert_money="$Money"." TK=" . $Money/86.56 ." USD";
+        return  $convert_money;
+    }
+    elseif ($Convert=="CAD"){
+        $convert_money="$Money"." TK=" . $Money/67.57 ." CAD";
+        return  $convert_money;
+        
+    }
+    elseif ($Convert=="RUPI"){
+        $convert_money="$Money"." TK=" . $Money/1.13 ." RUPI";
+        return  $convert_money;
+    }
+    elseif ($Convert=="POUND"){
+        $convert_money="$Money"." TK=" . $Money/108.93 ." POUND";
+        return  $convert_money;
+    }
+    elseif ($Convert=="RIYAL"){
+        $convert_money="$Money"." TK=" . $Money/23.08 ." RIYAL";
+        return  $convert_money;
+    }
+    elseif ($Convert=="EURO"){
+        $convert_money="$Money"." TK=" . $Money/92.14 ." EURO";
+        return  $convert_money;
+    }
+}
+
+echo CurrencyConverter(100,"USD");echo "<br>";
+echo CurrencyConverter(100,"CAD");echo "<br>";
+echo CurrencyConverter(100,"RUPI");echo "<br>";
+echo CurrencyConverter(100,"POUND");echo "<br>";
+echo CurrencyConverter(100,"RIYAL");echo "<br>";
+echo CurrencyConverter(100,"EURO");echo "<br>";
