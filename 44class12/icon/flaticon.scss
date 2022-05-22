@@ -1,0 +1,149 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?0db10878f5080ed1a7632f3d4baef60e") format("truetype"),
+url("./flaticon.woff?0db10878f5080ed1a7632f3d4baef60e") format("woff"),
+url("./flaticon.woff2?0db10878f5080ed1a7632f3d4baef60e") format("woff2"),
+url("./flaticon.eot?0db10878f5080ed1a7632f3d4baef60e#iefix") format("embedded-opentype"),
+url("./flaticon.svg?0db10878f5080ed1a7632f3d4baef60e#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "book-1": "\f101",
+    "book": "\f102",
+    "calendar": "\f103",
+    "clipboard": "\f104",
+    "clock": "\f105",
+    "envelope-1": "\f106",
+    "envelope": "\f107",
+    "facebook": "\f108",
+    "globe": "\f109",
+    "instagram": "\f10a",
+    "left-chevron-1": "\f10b",
+    "left-chevron": "\f10c",
+    "location-pin": "\f10d",
+    "maps-and-flags": "\f10e",
+    "mortarboard-1": "\f10f",
+    "mortarboard": "\f110",
+    "online-appointment": "\f111",
+    "open-book": "\f112",
+    "quote": "\f113",
+    "right-chevron-1": "\f114",
+    "right-chevron": "\f115",
+    "searching": "\f116",
+    "skype": "\f117",
+    "star-1": "\f118",
+    "star-2": "\f119",
+    "star": "\f11a",
+    "teacher": "\f11b",
+    "twitter": "\f11c",
+    "user-1": "\f11d",
+    "user": "\f11e",
+    "wall-clock": "\f11f",
+);
+
+.flaticon-book-1:before {
+    content: map-get($flaticon-map, "book-1");
+}
+.flaticon-book:before {
+    content: map-get($flaticon-map, "book");
+}
+.flaticon-calendar:before {
+    content: map-get($flaticon-map, "calendar");
+}
+.flaticon-clipboard:before {
+    content: map-get($flaticon-map, "clipboard");
+}
+.flaticon-clock:before {
+    content: map-get($flaticon-map, "clock");
+}
+.flaticon-envelope-1:before {
+    content: map-get($flaticon-map, "envelope-1");
+}
+.flaticon-envelope:before {
+    content: map-get($flaticon-map, "envelope");
+}
+.flaticon-facebook:before {
+    content: map-get($flaticon-map, "facebook");
+}
+.flaticon-globe:before {
+    content: map-get($flaticon-map, "globe");
+}
+.flaticon-instagram:before {
+    content: map-get($flaticon-map, "instagram");
+}
+.flaticon-left-chevron-1:before {
+    content: map-get($flaticon-map, "left-chevron-1");
+}
+.flaticon-left-chevron:before {
+    content: map-get($flaticon-map, "left-chevron");
+}
+.flaticon-location-pin:before {
+    content: map-get($flaticon-map, "location-pin");
+}
+.flaticon-maps-and-flags:before {
+    content: map-get($flaticon-map, "maps-and-flags");
+}
+.flaticon-mortarboard-1:before {
+    content: map-get($flaticon-map, "mortarboard-1");
+}
+.flaticon-mortarboard:before {
+    content: map-get($flaticon-map, "mortarboard");
+}
+.flaticon-online-appointment:before {
+    content: map-get($flaticon-map, "online-appointment");
+}
+.flaticon-open-book:before {
+    content: map-get($flaticon-map, "open-book");
+}
+.flaticon-quote:before {
+    content: map-get($flaticon-map, "quote");
+}
+.flaticon-right-chevron-1:before {
+    content: map-get($flaticon-map, "right-chevron-1");
+}
+.flaticon-right-chevron:before {
+    content: map-get($flaticon-map, "right-chevron");
+}
+.flaticon-searching:before {
+    content: map-get($flaticon-map, "searching");
+}
+.flaticon-skype:before {
+    content: map-get($flaticon-map, "skype");
+}
+.flaticon-star-1:before {
+    content: map-get($flaticon-map, "star-1");
+}
+.flaticon-star-2:before {
+    content: map-get($flaticon-map, "star-2");
+}
+.flaticon-star:before {
+    content: map-get($flaticon-map, "star");
+}
+.flaticon-teacher:before {
+    content: map-get($flaticon-map, "teacher");
+}
+.flaticon-twitter:before {
+    content: map-get($flaticon-map, "twitter");
+}
+.flaticon-user-1:before {
+    content: map-get($flaticon-map, "user-1");
+}
+.flaticon-user:before {
+    content: map-get($flaticon-map, "user");
+}
+.flaticon-wall-clock:before {
+    content: map-get($flaticon-map, "wall-clock");
+}

@@ -1,0 +1,113 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("./flaticon.ttf?0db10878f5080ed1a7632f3d4baef60e") format("truetype"),
+url("./flaticon.woff?0db10878f5080ed1a7632f3d4baef60e") format("woff"),
+url("./flaticon.woff2?0db10878f5080ed1a7632f3d4baef60e") format("woff2"),
+url("./flaticon.eot?0db10878f5080ed1a7632f3d4baef60e#iefix") format("embedded-opentype"),
+url("./flaticon.svg?0db10878f5080ed1a7632f3d4baef60e#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-book-1:before {
+    content: "\f101";
+}
+.flaticon-book:before {
+    content: "\f102";
+}
+.flaticon-calendar:before {
+    content: "\f103";
+}
+.flaticon-clipboard:before {
+    content: "\f104";
+}
+.flaticon-clock:before {
+    content: "\f105";
+}
+.flaticon-envelope-1:before {
+    content: "\f106";
+}
+.flaticon-envelope:before {
+    content: "\f107";
+}
+.flaticon-facebook:before {
+    content: "\f108";
+}
+.flaticon-globe:before {
+    content: "\f109";
+}
+.flaticon-instagram:before {
+    content: "\f10a";
+}
+.flaticon-left-chevron-1:before {
+    content: "\f10b";
+}
+.flaticon-left-chevron:before {
+    content: "\f10c";
+}
+.flaticon-location-pin:before {
+    content: "\f10d";
+}
+.flaticon-maps-and-flags:before {
+    content: "\f10e";
+}
+.flaticon-mortarboard-1:before {
+    content: "\f10f";
+}
+.flaticon-mortarboard:before {
+    content: "\f110";
+}
+.flaticon-online-appointment:before {
+    content: "\f111";
+}
+.flaticon-open-book:before {
+    content: "\f112";
+}
+.flaticon-quote:before {
+    content: "\f113";
+}
+.flaticon-right-chevron-1:before {
+    content: "\f114";
+}
+.flaticon-right-chevron:before {
+    content: "\f115";
+}
+.flaticon-searching:before {
+    content: "\f116";
+}
+.flaticon-skype:before {
+    content: "\f117";
+}
+.flaticon-star-1:before {
+    content: "\f118";
+}
+.flaticon-star-2:before {
+    content: "\f119";
+}
+.flaticon-star:before {
+    content: "\f11a";
+}
+.flaticon-teacher:before {
+    content: "\f11b";
+}
+.flaticon-twitter:before {
+    content: "\f11c";
+}
+.flaticon-user-1:before {
+    content: "\f11d";
+}
+.flaticon-user:before {
+    content: "\f11e";
+}
+.flaticon-wall-clock:before {
+    content: "\f11f";
+}
