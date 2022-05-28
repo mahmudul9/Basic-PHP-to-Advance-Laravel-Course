@@ -1,0 +1,98 @@
+
+CREATE DATABASE user_information;
+
+
+CREATE TABLE user_table(
+    id INT NOT NULL AUTO_INCREMENT,
+    username VARCHAR(50),
+    age INT,
+    phone VARCHAR(15),
+    address VARCHAR(120),
+    created_at TIMESTAMP,
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+)
+
+
+##### Part 01 Start#########
+
+single insert query:===========
+INSERT INTO `user_table` (`id`, `username`, `age`, `phone`, `address`, `created_at`, `updated_at`) VALUES (NULL, 'rahim10', '19', '01756652334546', 'Jashore,Khulna,Bangladesh', current_timestamp(), current_timestamp());
+
+multiple insert query:========
+INSERT INTO `user_table` (`id`, `username`, `age`, `phone`, `address`, `created_at`, `updated_at`) VALUES 
+
+(NULL, 'Karim', '21', '01756652343553', 'Khulna,Bangladesh', current_timestamp(), current_timestamp()), 
+(NULL, 'Kamal', '22', '017324678999', 'Dhaka,Bangladesh', current_timestamp(), current_timestamp()),
+(NULL, 'Borno', '25', '0173246756657', 'Dhaka,Bangladesh', current_timestamp(), current_timestamp()),
+(NULL, 'Masud', '20', '017324345654', 'Dhaka,Bangladesh', current_timestamp(), current_timestamp());
+)
+
+update query:=============
+
+UPDATE `user_table` SET `username`='[Kamal112]',`age`='[29]',`address`='[Chittagonj,Bangladesh]' WHERE id=3;
+
+Delate query:=============
+DELETE FROM `user_table` WHERE id=4;
+
+Screenshot: https://prnt.sc/XkoQK8I34xnh
+            https://prnt.sc/mtApNoET8OmY
+
+##### Part 01 End#########
+
+
+##### Part 02 Start#########
+
+
+CREATE TABLE product_table(
+    id INT NOT NULL AUTO_INCREMENT,
+    post_title VARCHAR(60),
+    post_details VARCHAR(500),
+    post_file VARCHAR(50),
+    created_at TIMESTAMP,
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    delated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+
+)
+single insert query:===========
+INSERT INTO  `product_table` (`id`, `post_title`, `post_details`, `post_file`, `created_at`, `updated_at`, `delated_at`) VALUES (NULL, 'Tille2', 'LOREM IPSUM Dolor sit amet, consectetur adipiscing elit. Nunc libero.\r\nDuis volutpat,', 'errext.txt', current_timestamp(), current_timestamp(), current_timestamp());
+
+
+multiple insert query:========
+
+INSERT INTO `product_table` (`id`, `post_title`, `post_details`, `post_file`, `created_at`, `updated_at`, `delated_at`) VALUES (NULL, 'Tille4', 'LOREM IPSUM Dolor sit amet, consectetur adipiscing elit. Nunc libero.\r\nDuis volutpat, nisi at euismod tristique, nisl enim suscipit tortor, \r\nac laoreet nisl ante a metus. Proin ac augue. Curabitur pellentesque \r\nsem eleifend velit. Fusce quam augue, venenatis a, fringilla eget, \r\nvarius at, diam. In in diam nec sapien mattis interdum.', 'errext.txt', current_timestamp(), current_timestamp(), current_timestamp()), (NULL, 'title7', 'LOREM IPSUM Dolor sit amet, consectetur adipiscing elit. Nunc libero.\r\nDuis volutpat, nisi at euismod tristique, nisl enim suscipit tortor, \r\nac laoreet nisl ante a metus. ', 'tyytrrext.txt', current_timestamp(), current_timestamp(), current_timestamp());
+
+update query:=============
+
+UPDATE `product_table` SET `post_title`='[tltle new]' WHERE id=2;
+
+Delate query:=============
+DELETE FROM `product_table` WHERE id=3;
+
+
+##### Part 02 End#########
+
+##### Part 03 Start#########
+
+CREATE TABLE comments_table(
+    id INT NOT NULL AUTO_INCREMENT,
+    post_id  INT,
+    comment	VARCHAR(100),
+    created_at TIMESTAMP,
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    delated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+
+)
+
+
+INSERT INTO `comments_table` (`id`, `post_id`, `comment`, `created_at`, `updated_at`, `delated_at`) VALUES (NULL, '', 'vfgvgf', current_timestamp(), '0000-00-00 00:00:00.000000', '0000-00-00 00:00:00.000000');
+
+
+INSERT INTO `comments_table` (`id`, `post_id`, `comment`, `created_at`, `updated_at`, `delated_at`) VALUES (NULL, '', 'dfggfh', current_timestamp(), '0000-00-00 00:00:00.000000', '0000-00-00 00:00:00.000000'), (NULL, '', 'hgfjhg', current_timestamp(), '0000-00-00 00:00:00.000000', '0000-00-00 00:00:00.000000');
+
+
+update query:=============
+
+UPDATE `comments_table` SET `comment`='[tltdefggf]' WHERE id=2;
+
+Delate query:=============
+DELETE FROM `comments_table` WHERE id=4;
