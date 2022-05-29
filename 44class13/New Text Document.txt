@@ -2,6 +2,7 @@
 CREATE DATABASE user_information;
 
 
+
 CREATE TABLE user_table(
     id INT NOT NULL AUTO_INCREMENT,
     username VARCHAR(50),
@@ -11,6 +12,7 @@ CREATE TABLE user_table(
     created_at TIMESTAMP,
     updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 )
+
 
 
 ##### Part 01 Start#########
