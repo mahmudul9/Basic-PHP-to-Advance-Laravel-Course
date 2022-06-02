@@ -1,7 +1,7 @@
-CREATE DATABASE my_user_information;
+CREATE DATABASE user_information;
 
 
-CREATE TABLE user_table(
+CREATE TABLE user_table2(
     id INT NOT NULL AUTO_INCREMENT,
     username VARCHAR(30),
     age	varchar(3),
@@ -11,12 +11,39 @@ CREATE TABLE user_table(
     updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 )
 
-INSERT INTO `users table`( `username`, `age`, `phone`, `address`, `salary`, `country`) VALUES ('[Tahmid01]','[22]','[01521356786]','[Dhaka,Bangladesh]','[20000]','[Bangladesh]')
+#######INSERT########
+INSERT INTO `user_table2`( `username`, `age`, `phone`, `address`, `salary`, `country`) VALUES ('[Tahmid01]','[22]','[01521356786]','[Dhaka,Bangladesh]','[20000]','[Bangladesh]')
 
-
-INSERT INTO `users table`( `username`, `age`, `phone`, `address`, `salary`, `country`) VALUES 
+INSERT INTO `user_table2`( `username`, `age`, `phone`, `address`, `salary`, `country`) VALUES 
 ('[Karim012]','[22]','[0154323232]','[Karachi,Pakistan]','[22000]','[Pakistan]'),
 ('[Nasir12]','[25]','[01325435465]','[Delli]','[50000]','[India]'),
 ('[Kalam]','[22]','[0154323232]','[Karachi,Pakistan]','[22000]','[Pakistan]'),
 ('[Harun]','[27]','[014323232]','[New york]','[100000]','[USA]'),
 ('[Kamal2]','[20]','[05657544]','[Karachi,Pakistan]','[22000]','[Pakistan]')
+
+
+1.Select Query
+#########SELECT##########
+SELECT `id`,`username`,`age`,`phone`,`address`,`salary`,`country` FROM `user_table2`;
+
+#TO continue full information######
+SELECT * FROM `user_table2`;
+
+
+
+###Find users who live in the same country ###
+SELECT * FROM `user_table2` WHERE `country`='Bangladesh';
+#or#
+SELECT * FROM `user_table2` WHERE `country`='Pakistan';
+#or#
+SELECT * FROM `user_table2` WHERE `country`='USA';
+
+
+#####Show data  by high to low salary ############
+
+SELECT * FROM `user_table2` ORDER BY id DESC;
+
+#######Show data who get the highest salary#####
+SELECT * FROM `user_table2` ORDER BY id DESC;
+
+Show data who get the lowest 
