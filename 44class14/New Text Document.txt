@@ -7,6 +7,8 @@ CREATE TABLE user_table2(
     age	varchar(3),
     phone VARCHAR(15),
     address VARCHAR(120),
+    salary	float,
+    country	varchar(30),
     created_at TIMESTAMP,
     updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 )
@@ -44,6 +46,16 @@ SELECT * FROM `user_table2` WHERE `country`='USA';
 SELECT * FROM `user_table2` ORDER BY id DESC;
 
 #######Show data who get the highest salary#####
-SELECT * FROM `user_table2` ORDER BY id DESC;
+
+SELECT`id`,`username`,`phone` , MAX(`salary`) FROM `user_table2`
 
 Show data who get the lowest 
+SELECT`id`,`username`,`phone` , MIN(`salary`) FROM `user_table2`
+
+
+#######Show how many table rows you have ######
+SELECT  COUNT(*) FROM `user_table2`
+
+
+#####Show me how many users get a salary range of ( 5000 -15000).###
+SELECT COUNT(*) FROM `user_table2` WHERE `salary` BETWEEN 5000 AND 15000;
