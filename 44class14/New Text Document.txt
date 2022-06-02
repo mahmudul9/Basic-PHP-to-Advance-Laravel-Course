@@ -1,0 +1,22 @@
+CREATE DATABASE my_user_information;
+
+
+CREATE TABLE user_table(
+    id INT NOT NULL AUTO_INCREMENT,
+    username VARCHAR(30),
+    age	varchar(3),
+    phone VARCHAR(15),
+    address VARCHAR(120),
+    created_at TIMESTAMP,
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+)
+
+INSERT INTO `users table`( `username`, `age`, `phone`, `address`, `salary`, `country`) VALUES ('[Tahmid01]','[22]','[01521356786]','[Dhaka,Bangladesh]','[20000]','[Bangladesh]')
+
+
+INSERT INTO `users table`( `username`, `age`, `phone`, `address`, `salary`, `country`) VALUES 
+('[Karim012]','[22]','[0154323232]','[Karachi,Pakistan]','[22000]','[Pakistan]'),
+('[Nasir12]','[25]','[01325435465]','[Delli]','[50000]','[India]'),
+('[Kalam]','[22]','[0154323232]','[Karachi,Pakistan]','[22000]','[Pakistan]'),
+('[Harun]','[27]','[014323232]','[New york]','[100000]','[USA]'),
+('[Kamal2]','[20]','[05657544]','[Karachi,Pakistan]','[22000]','[Pakistan]')
