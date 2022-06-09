@@ -1,0 +1,52 @@
+Create database name_information
+
+
+CREATE TABLE user(
+    id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(40),
+    email VARCHAR(40),
+    phone_number VARCHAR(15)
+)
+
+CREATE TABLE User_details(
+    id INT NOT NULL AUTO_INCREMENT,
+    secondary_id INT,
+    adress VARCHAR(60),
+    country VARCHAR(20)
+)
+
+
+INSERT INTO `user` (`id`, `Name`, `email`, `phone number`) VALUES (NULL, 'Mahamudul', 'mahamudul452@gmail.com', '01565475776'), (NULL, 'hasan', 'hasan3467@gmail.com', '01551245544'), (NULL, 'Karim', 'kalam438758@gmail.com', '0144757588987978'), (NULL, 'abid', 'abid555@gmail.com', '017534636354');
+
+INSERT INTO `user_details` (`id`, `second_id`, `adress`, `country`) VALUES (NULL, '1', 'Dhaka', 'Bangladesh'), (NULL, '2', 'khulna', 'Bangladesh');
+
+INSERT INTO `user_details` (`id`, `second_id`, `adress`, `country`) VALUES (NULL, '4', 'Rajshahi', 'Bangladesh');
+
+
+
+####INNER JOIN####
+SELECT user.id,user.Name,user.email , user_details.adress ,user_details.country FROM user
+INNER JOIN user_details ON user.id = user_details.second_id
+
+screenshot :  https://prnt.sc/2dxZOgbpjxE6
+
+
+
+####LEFT JOIN####
+SELECT user.id,user.Name,user.email , user_details.adress ,user_details.country FROM user
+LEFT JOIN user_details ON user.id = user_details.second_id
+
+screenshot : https://prnt.sc/GZNYaxfms5sW
+
+
+
+
+
+INSERT INTO `user_details` (`id`, `second_id`, `adress`, `country`) VALUES (NULL, '5', 'Dhaka', 'Bangladesh');
+
+
+###RIGHT JOIN###
+SELECT user.id,user.Name,user.email , user_details.adress ,user_details.country FROM user
+RIGHT JOIN user_details ON user.id = user_details.second_id
+
+Screenshot: https://prnt.sc/mG_I0OPutEHL
