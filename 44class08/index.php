@@ -172,8 +172,7 @@ echo "<br>";echo "<br>";
 <?php
 function CurrencyConverter($Money,$Convert){
 
-    $convert= strtoupper($Convert);
-    // Capital small case
+   
 
     if ($Convert=="USD") {
         $convert_money="$Money"." TK=" . $Money/86.56 ." USD";
