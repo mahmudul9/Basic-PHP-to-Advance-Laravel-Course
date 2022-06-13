@@ -64,10 +64,9 @@
 
 
 					<div class="breadcrumb-line">
-						<ul class="breadcrumb">
-							<li><a href="index.html"><i class="icon-home2 position-left"></i> Home</a></li>
-							<li><a href="datatable_basic.html">Datatables</a></li>
-							<li class="active">Basic</li>
+						<ul class="breadcrumb">			
+							<li><a href="#"><i class="icon-home2 position-left"></i>Banner</a></li>
+							<li class="active">List</li>
 						</ul>
 				
 					</div>
@@ -81,9 +80,12 @@
 					<!-- Basic datatable -->
 					<div class="panel panel-flat">
 						<div class="panel-heading">
-							<h5 class="panel-title">Basic datatable</h5>
+							<h5 class="panel-title">Banner List</h5>
 							<div class="heading-elements">
 								<ul class="icons-list">
+
+								<li style="margin-right: 10px; color: #fff; border-radius:10px;"><a href="bannerAdd.php" class="btn btn-primary add-new">Add New</a></li>
+
 			                		<li><a data-action="collapse"></a></li>
 			                		<li><a data-action="reload"></a></li>
 			                		<li><a data-action="close"></a></li>
@@ -93,36 +95,31 @@
 
 						<div class="panel-body">
 
-						<table class="table datatable-basic">
+						<table class="table table-striped table-bordered table-hover datatable-basic">
 							<thead>
 								<tr>
-									<th>First Name</th>
-									<th>Last Name</th>
-									<th>Job Title</th>
-									<th>DOB</th>
-									<th>Status</th>
-									<th class="text-center">Actions</th>
+									<th width="5%">Sl.No</th>
+									<th width="20%">First Name</th>
+									<th width="20%">Last Name</th>
+									<th width="20%">Job Title</th>
+									<th width="15%">DOB</th>
+									<th width="5%">Status</th>
+									<th width="15%" class="text-center">Actions</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
+									<td>01</td>
 									<td>Marth</td>
 									<td><a href="#">Enright</a></td>
 									<td>Traffic Court Referee</td>
 									<td>22 Jun 1972</td>
 									<td><span class="label label-success">Active</span></td>
 									<td class="text-center">
-										<ul class="icons-list">
-											<li class="dropdown">
-												<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-													<i class="icon-menu9"></i>
-												</a>
 
-												<ul class="dropdown-menu dropdown-menu-right">
-													<li><a href="#"><i class="icon-file-pdf"></i> Export to .pdf</a></li>
-													<li><a href="#"><i class="icon-file-excel"></i> Export to .csv</a></li>
-													<li><a href="#"><i class="icon-file-word"></i> Export to .doc</a></li>
-												</ul>
+									<a href="bannerUpdate.php"><i class="icon-pencil5"></i></a>
+									<a href="bannerDelate.php"><i class=" icon-trash"></i></a>
+
 											</li>
 										</ul>
 									</td>

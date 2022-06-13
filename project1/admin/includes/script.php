@@ -6,7 +6,10 @@
 	<!-- /core JS files -->
     
 <!-- Theme JS files -->
+	<script type="text/javascript" src="assets/js/plugins/forms/selects/bootstrap_select.min.js"></script>
+
 <script type="text/javascript" src="assets/js/plugins/tables/datatables/datatables.min.js"></script>
+
 	<script type="text/javascript" src="assets/js/plugins/forms/selects/select2.min.js"></script>
 
 	<!-- <script type="text/javascript" src="assets/js/plugins/visualization/d3/d3.min.js"></script>
@@ -18,7 +21,9 @@
 	<script type="text/javascript" src="assets/js/plugins/pickers/daterangepicker.js"></script> -->
 
 	<script type="text/javascript" src="assets/js/core/app.js"></script>
-	
+
+	<script type="text/javascript" src="assets/js/pages/form_bootstrap_select.js"></script>
 	<script type="text/javascript" src="assets/js/pages/datatables_basic.js"></script>
 	<script type="text/javascript" src="assets/js/pages/dashboard.js"></script>
 	<!-- /theme JS files -->
+	
