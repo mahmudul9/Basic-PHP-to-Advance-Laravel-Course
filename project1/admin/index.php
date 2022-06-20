@@ -1,8 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<html lang="en">
 
-<?php include "includes/head.php"; ?>
+<?php
+// die (basename(__DIR__));
+// echo basename(__DIR__);
+if (basename(__DIR__)!="admin") {
+	$baseUrl="../";
+	$isInternal = true;
+}
+else {
+	$baseUrl="";
+	$isInternal=false;
+}
+ ?>
+
+<?php
+include "includes/head.php"; 
+?>
+
 
 <body>
 
@@ -83,8 +98,8 @@
 
 					<div class="breadcrumb-line">
 						<ul class="breadcrumb">
-							<li><a href="index.html"><i class="icon-home2 position-left"></i> Home</a></li>
-							<li class="active">Dashboard</li>
+							<li><a href="#"><i class="icon-home2 position-left"></i> Home</a></li>
+							<li >Dashboard</li>
 						</ul>
 
 						<ul class="breadcrumb-elements">
