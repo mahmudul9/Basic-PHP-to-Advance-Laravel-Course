@@ -113,8 +113,8 @@
 								<?php
 									require '../controller/dbconfig.php';
 									$banner_id =$_GET['banner_id'];
-									$getSingleDataQry = "SELECT * FROM banners WHERE id={$banner_id}";
-									$getResult = mysqli_query($dbConnect,$getSingleDataQry)
+									$getSingleDataQry = "SELECT * FROM banners WHERE id='{$banner_id}'";
+									$getResult = mysqli_query($dbCon,$getSingleDataQry);
 								 ?>
 								<form class="form-horizontal" action="../controller/bannerController.php" method="post">
 								<fieldset class="content-group mt-5">
@@ -135,9 +135,10 @@
 
 								 <?php
 								 	foreach ($getResult as $key => $banner) {
-									
-									 
+										
 								  ?>
+								  <input type="hidden" class="form-control" name="banner_id" value="<?php echo $banner['id']; ?>">
+								  
 									<div class="form-group">
 										<label class="control-label col-lg-2" for="title" >Title</label>
 										<div class="col-lg-10">

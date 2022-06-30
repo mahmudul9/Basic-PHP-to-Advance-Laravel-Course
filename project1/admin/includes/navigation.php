@@ -20,7 +20,7 @@
 									
 								<li><a href="#"><i class="icon-home4"></i><span>Sections</span></a></li>
 							
-								<li><a href="#"><i class="icon-home4"></i><span>Our Projects</span></a></li>
+								<li class=<?php echo $manuName == 'project' ? "active" : ''; ?> ><a href="<?php echo $isInternal == true ? '': 'project/';?>projectList.php"><i class="icon-home4"></i><span>Our Projects</span></a></li>
 								
 									
 								<li><a href="#"><i class="icon-home4"></i><span>Our Staff</span></a></li>

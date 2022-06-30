@@ -113,7 +113,18 @@ else {
 
 						<div class="panel-body">
 
+						<!-- For banner delate -->
+						<?php
+								  if (isset($_GET['msg'])) {
 
+									?>
+							
+									<div class="alert alert-success no-border">
+											<button type="button" class="close" data-dismiss="alert"><span>×</span><span class="sr-only">Close</span></button>
+											<span class="text-semibold">Success</span> <?php echo $_GET['msg']; ?>
+										</div>
+								 
+								 <?php }  ?>
 					
 
 						<table class="table table-striped table-bordered table-hover datatable-basic">
@@ -132,20 +143,23 @@ else {
 			<!-- ####### Data from database to website table ########## -->
 						<?php 
 						 $selectQry= "SELECT * FROM banners WHERE active_status=1";
-						 $bannerList= mysqli_query($dbConnect , $selectQry);
-						 foreach($bannerList as $key => $value){
+						 $bannerList= mysqli_query($dbCon , $selectQry);
+						 foreach($bannerList as $key => $banner){
 							
 						?>
 								<tr>
 									<td> <?php echo ++$key; ?> </td>
-									<td> <?php echo $value["title"];?> </td>
-									<td> <?php echo $value["sub_title"];?> </td>
-									<td> <?php echo $value["details"];?> </td>
-									<td> <?php echo $value["image"];?> </td>
+									<td> <?php echo $banner["title"];?> </td>
+									<td> <?php echo $banner["sub_title"];?> </td>
+									<td> <?php echo $banner["details"];?> </td>
+									<td>
+										<img class="img-responsive" width="100%" height="100%" src="<?php echo "../uploads/bannerImage/".$banner["image"];?>" />    
+									</td> 
+
 									<td class="text-center">
 
-									<a href="bannerUpdate.php?banner_id= <?php echo $value["id"]; ?>"><i class="icon-pencil5"></i></a>
-									<a href="bannerDelate.php"><i class=" icon-trash"></i></a>
+									<a href="bannerUpdate.php?banner_id=<?php echo $banner['id']; ?>"><i class="icon-pencil5"></i></a>
+									<a href="bannerDelate.php?banner_id=<?php echo $banner['id']; ?>"><i class=" icon-trash"></i></a>
 
 											</li>
 										</ul>
